@@ -1,8 +1,9 @@
-- name: Massachusets Instutite of Technology
-  link: http://web.mit.edu/
-  date: 2011 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  descr: <br> (expected graduation in 2019)
+- name: Harvard Kennedy School
+  # link: http://web.mit.edu/
+  date: 2017 – 2019
+  description: Master of Public Policy, International and Global Affairs
 
-- name: Harvard
-  link: http://www.harvard.edu/
-  date: 2007 - 2011
+- name: Harvard College
+  # link: http://www.harvard.edu/
+  date: 2009 – 2013
+  description: AB, Organismic and Evolutionary Biology
