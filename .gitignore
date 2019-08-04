@@ -1,1 +1,9 @@
-_site/
+.extra_files
+.sass-cache
+.directory
+.ruby-version
+.vscode
+_drafts
+_site
+Gemfile.lock
+Thumbs.db
