@@ -2,23 +2,34 @@
 layout: default
 ---
 
+<!-- The home page feed for all of the posts. -->
+
 {% for post in site.posts %}
 <section class="post">
   <header class="post-header">
+
+    <!-- Set the post info. -->
+
     <p class="post-meta">
       <span class="post-date">
-        {{ post.date | date: "%-d %b %Y" | upcase }}
+        {{ post.date | date: "%B %Y" }}
       </span>
+
       {% if post.categories.size > 0 %}
       •
       {% for cat in post.categories %}
         <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
         {% unless forloop.last %}
-        <span>/</span>
+        <span>
+          /
+        </span>
         {% endunless %}
       {% endfor %}
       {% endif %}
     </p>
+
+    <!-- Set the post title (and author). -->
+
     <h4>
       <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
       {% if post.link %}
@@ -33,6 +44,8 @@ layout: default
     {% endif %}
 
     </header>
+
+    <!-- Set the post excerpt and image. -->
 
     {% if post.excerpt %}
     <div class="post-description">
@@ -51,11 +64,7 @@ layout: default
       "{{ site.url }}/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title | escape }} feature image">
-
-      {% if post.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
-      {% endif %}
-    </div><!-- /.image-wrap -->
+    </div>
     {% endif %}
 
 </section>

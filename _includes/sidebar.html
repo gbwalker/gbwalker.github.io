@@ -1,4 +1,4 @@
-<!-- Generic HTML header for all pages. -->
+<!-- Left sidebar for all pages. -->
 
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
@@ -19,12 +19,17 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="{{ site.url }}/">home</a>
+        <a href="{{ site.url }}/">Home</a>
       </li>
+      <br>
+
+      <!-- A list of all the site pages. -->
+
       {% for page in site.pages %} {% if page.title %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
       </li>
+      <br>
       {% endif %} {% endfor %}
     </ul>
   </nav>

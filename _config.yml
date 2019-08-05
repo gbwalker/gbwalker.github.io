@@ -1,19 +1,17 @@
-#
 ###################################
-# Site wide configuration
+# Site-wide configuration
 ####################################
-#
+
 title: Gabriel Walker | Data Science
 email: gabrielbwalker@gmail.com
-description: Site description.
+description: Gabe Walker's personal website.
 url: https://gbwalker.github.io
 keywords: ["Gabe", "Walker", "github"]
 
-#
 ###################################
 # Jekyll configuration
 ####################################
-#
+
 timezone:          New York
 markdown:          kramdown
 highlighter:       rouge
@@ -27,18 +25,17 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-#
 ###################################
 # Site Owner configuration
 ####################################
-#
+
 owner:
   name: Gabriel Walker
   avatar: icon.png
   job: "Data Science"
   bio: "A selection of projects."
-  email: "email@gmail.com"
-  disqus-shortname:
+  email: "gabrielbwalker@gmail.com"
+  disqus-shortname: #username
   twitter: #username
   facebook: #username
   google:
